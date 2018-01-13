@@ -9,7 +9,13 @@ import emailIcon from "../images/email.svg";
 import mediumIcon from "../images/medium.svg";
 
 const SocialLinks = () => (
-  <div>
+  <ul
+    style={{
+      listStyleType: "none",
+      margin: 0,
+      padding: 0
+    }}
+  >
     <SocialLink
       href="https://www.instagram.com/heythisisandrew/"
       image={instagramIcon}
@@ -30,7 +36,7 @@ const SocialLinks = () => (
       image={mediumIcon}
       text="@andrewsteiner"
     />
-  </div>
+  </ul>
 );
 
 export default SocialLinks;

@@ -1,40 +1,21 @@
 import React from "react";
-import Link from "gatsby-link";
+
+import NavigationLink from "./NavigationLink";
 
 const Navigation = () => (
-  <div
-    style={{
-      marginBottom: "1.45rem"
-    }}
-  >
-    <Link
-      to="/"
+  <nav>
+    <ul
       style={{
-        color: "white",
-        textDecoration: "none"
+        listStyleType: "none",
+        margin: 0,
+        padding: 0
       }}
     >
-      My Process
-    </Link>
-    <Link
-      to="/about/"
-      style={{
-        color: "white",
-        textDecoration: "none"
-      }}
-    >
-      About Me
-    </Link>
-    <Link
-      to="/projects/"
-      style={{
-        color: "white",
-        textDecoration: "none"
-      }}
-    >
-      Projects
-    </Link>
-  </div>
+      <NavigationLink to="/" text="My Process" />
+      <NavigationLink to="/about/" text="About Me" />
+      <NavigationLink to="/projects/" text="Projects" />
+    </ul>
+  </nav>
 );
 
 export default Navigation;

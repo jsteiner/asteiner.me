@@ -1,7 +1,12 @@
 import React from "react";
 
 const SocialLink = ({ href, image, text }) => (
-  <div>
+  <li
+    style={{
+      marginLeft: "10px",
+      float: "left"
+    }}
+  >
     <a
       href={href}
       style={{
@@ -12,7 +17,7 @@ const SocialLink = ({ href, image, text }) => (
       <img src={image} />
       {text}
     </a>
-  </div>
+  </li>
 );
 
 export default SocialLink;
